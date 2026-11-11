@@ -1,54 +1,60 @@
 import { cn } from "cn";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
-import MagicButton from "./ui/magic-button";
 import { CiLocationArrow1 } from "react-icons/ci";
 
+import MagicButton from "./ui/magic-button";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
-    return (
-        <div className="pb-20 pt-36">
-            <div>
-                <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
-                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
-                <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-            </div>
+  return (
+    <div className="pt-36 pb-20">
+      <div>
+        <Spotlight
+          className="-top-40 -left-10 h-screen md:-top-20 md:-left-32"
+          fill="white"
+        />
+        <Spotlight
+          className="top-10 left-full h-[80vh] w-[50vw]"
+          fill="purple"
+        />
+        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+      </div>
 
-            <div className="absolute flex h-screen w-full items-center justify-center bg-black dark:bg-grid-white bg-grid-black top-0 left-0">
-            <div
-                className={cn(
-                "absolute inset-0",
-                "bg-size-[40px_40px]",
-                "bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-                "dark:bg-[linear-gradient(to_right,#d4d4d4_[0.3],transparent_1px),linear-gradient(to_bottom,#d4d4d4_[0.3],transparent_1px)]",
-                )}
+      <div className="dark:bg-grid-white bg-grid-black absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-black">
+        <div
+          className={cn(
+            "absolute inset-0",
+            "bg-size-[40px_40px]",
+            "bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+            "dark:bg-[linear-gradient(to_right,#d4d4d4_[0.3],transparent_1px),linear-gradient(to_bottom,#d4d4d4_[0.3],transparent_1px)]",
+          )}
+        />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+      </div>
+
+      <div className="relative z-10 my-20 flex justify-center">
+        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
+          <h2 className="max-w-80 text-center text-xs tracking-widest text-blue-100 uppercase">
+            Dynamic Web Magic with Next.js
+          </h2>
+          <TextGenerateEffect
+            className="lg:text=6xl text-center text-[40px] md:text-5xl"
+            words="Transforming Concepts into Seamless User Experiences"
+          />
+          <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
+            Hi, I&apos;m Luisa, a Next.js Developer based in Brazil.
+          </p>
+          <a>
+            <MagicButton
+              title="Show my work"
+              icon={<CiLocationArrow1 />}
+              position="right"
             />
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-            </div>
-
-            <div className="flex justify-center relative my-20 z-10">
-                <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                    <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Dynamic Web Magic with Next.js</h2>
-                    <TextGenerateEffect 
-                        className="text-center text-[40px] md:text-5xl lg:text=6xl"
-                        words="Transforming Concepts into Seamless User Experiences" 
-                    />
-                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hi, I&apos;m Luisa, a Next.js Developer based in Brazil.
-                    </p>
-                    <a>
-                        <MagicButton 
-                            title="Show my work"
-                            icon={<CiLocationArrow1 />}
-                            position="right"
-                        />
-                    </a>
-                </div>
-            </div>
+          </a>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default Hero;
-
-
