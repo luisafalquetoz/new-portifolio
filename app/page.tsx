@@ -11,7 +11,7 @@ import { navItems } from "@/data";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col items-center justify-center overflow-hidden bg-black px-5 sm:px-10">
+    <main className="relative flex flex-col items-center justify-center bg-black overflow-clip px-5 sm:px-10">
       <div className="w-full max-w-7xl">
         <FloatingNav navItems={navItems} />
         <Hero />
