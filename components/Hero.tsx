@@ -39,14 +39,14 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="lg:text=6xl text-center text-[40px] md:text-5xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Transformando conceitos em experiências de usuário intuitivas e eficientes"
           />
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Hi, I&apos;m Luisa, a Next.js Developer based in Brazil.
+            Olá, sou Luisa, Desenvolvedora FullStack.
           </p>
           <a>
             <MagicButton
-              title="Show my work"
+              title="Mostre meu trabalho"
               icon={<CiLocationArrow1 />}
               position="right"
             />

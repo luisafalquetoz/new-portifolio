@@ -9,15 +9,13 @@ const Approach = () => {
     return (
         <section className="w-full py-20">
         <h1 className="heading">
-            My <span className="text-purple-200">approach</span>
+            Minha <span className="text-purple-200">abordagem</span>
         </h1>
         <div className="my-20 flex w-full flex-col lg:flex-row items-center justify-center gap-4">
             <Card
-            title="Planning & Strategy"
-            icon={<AceternityIcon order="Phase 1" />}
-            description="We'll collaborate to map out your website's goals, target audience, 
-            and key functionalities. We'll discuss things like site structure, 
-            navigation, and content requirements."
+            title="Planejamento & Estratégia"
+            icon={<AceternityIcon order="Fase 1" />}
+            description="Trabalharemos em conjunto para definir os objetivos do seu site, o público-alvo e as funcionalidades principais. Discutiremos aspectos como a estrutura do site, a navegação e os requisitos de conteúdo."
             >
             <CanvasRevealEffect
                 animationSpeed={5.1}
@@ -25,11 +23,9 @@ const Approach = () => {
             />
             </Card>
             <Card
-            title="Development & Progress Update"
-            icon={<AceternityIcon order="Phase 2" />}
-            description="Once we agree on the plan, I cue my lofi playlist and dive into
-            coding. From initial sketches to polished code, I keep you updated
-            every step of the way."
+            title="Atualização sobre o desenvolvimento & progresso"
+            icon={<AceternityIcon order="Fase 2" />}
+            description="Assim que definimos o plano, coloco minha playlist lo-fi para tocar e mergulho na programação. Dos rascunhos iniciais ao código finalizado, mantenho você a par de cada etapa do processo."
             >
             <CanvasRevealEffect
                 animationSpeed={3}
@@ -44,11 +40,9 @@ const Approach = () => {
             <div className="absolute inset-0 bg-black/50 mask-[radial-gradient(400px_at_center,white,transparent)] dark:bg-black/90" />
             </Card>
             <Card
-            title="Development & Launch"
-            icon={<AceternityIcon order="Phase 3" />}
-            description="This is where the magic happens! Based on the approved design, 
-            I'll translate everything into functional code, building your website
-            from the ground up."
+            title="Desenvolvimento & Lançamento"
+            icon={<AceternityIcon order="Fase 3" />}
+            description="É aqui que a mágica acontece! Com base no design aprovado, traduzirei tudo em código funcional, construindo seu site do zero."
             >
             <CanvasRevealEffect
                 animationSpeed={3}

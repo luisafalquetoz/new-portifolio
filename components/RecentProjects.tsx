@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { GoArrowUpRight } from "react-icons/go";
 
 import { projects } from "@/data";
@@ -6,10 +7,10 @@ import { PinContainer } from "./ui/3d-pin";
 
 const RecentProjects = () => {
     return (
-        <div className="py-20" id="projects">
+        <div className="py-20 mt-20" id="projects">
         <h1 className="heading">
-            A small selection of{" "}
-            <span className="text-purple-200">recent projects</span>
+            Uma pequena seleção de{" "}
+            <span className="text-purple-200">projetos recentes</span>
         </h1>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
             {projects.map(({ id, title, des, img, iconLists, link }) => (
@@ -44,7 +45,7 @@ const RecentProjects = () => {
                     </div>
                     <div className="flex items-center justify-center">
                     <p className="flex text-sm text-purple-200 md:text-xs lg:text-xl">
-                        Check Live Site
+                        Visite o Site
                     </p>
                     <GoArrowUpRight className="ms-3" color="#CBACF9" />
                     </div>

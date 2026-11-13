@@ -17,16 +17,14 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center">
             <h1 className="heading lg:max-w-[45vw]">
-            Ready to take <span className="text-purple-200">your</span> digital
-            presence to the next level?
+            Pronto para levar <span className="text-purple-200">sua</span> presença digital a um novo patamar?
             </h1>
             <p className="text-white-200 my-5 text-center md:mt-10">
-            Reach out to me today and let&apos;s discuss how I can help you
-            achieve your goals.
+            Entre em contato comigo hoje mesmo e vamos conversar sobre como posso ajudar você a alcançar seus objetivos.
             </p>
             <a href="mailto:luisafzandonade@gmail.com">
             <MagicButton
-                title="Let's get in touch"
+                title="Entrar em contato"
                 icon={<CiLocationArrow1 />}
                 position="right"
             />
@@ -42,7 +40,7 @@ const Footer = () => {
                 key={profile.id}
                 className="bg-opacity-75 bg-black-200 border-black-300 flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg saturate-180 backdrop-blur-lg backdrop-filter"
                 >
-                <img src={profile.img} alt={profile.id} width={20} height={20} />
+                <img src={profile.img} alt={profile.alt} width={20} height={20} />
                 </div>
             ))}
             </div>

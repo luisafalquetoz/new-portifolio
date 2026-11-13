@@ -7,8 +7,8 @@ const Clients = () => {
     return (
         <div className="py-20" id="testimonials">
         <h1 className="heading">
-            Kind words from{" "}
-            <span className="text-purple-200">satisfied clients</span>
+            Palavras gentis de{" "}
+            <span className="text-purple-200">clientes satisfeitos</span>
         </h1>
         <div className="flex flex-col items-center mt-10">
             <InfiniteMovingCards

@@ -6,7 +6,7 @@ const Experiences = () => {
     return (
         <div className="py-20">
         <h1 className="heading">
-            My work <span className="text-purple-200">experience</span>
+            Minha experiência <span className="text-purple-200">profissional</span>
         </h1>
         <div className="mt-12 grid w-full grid-cols-1 gap-10 lg:grid-cols-4">
             {workExperience.map((card) => (
